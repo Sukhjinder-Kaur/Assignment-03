@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-
+/*Name=Sukhjinder Kaur 
+ *Student number= 301087895
+ *Date last Modified= 13/07/2020
+ *Program description=GiantPlanet is a subclass of abstract class-Planet.It has Ice and Gas its planets.
+ */
 namespace Assignment_03
 {/// <summary>
 /// This is the derived class of Planet

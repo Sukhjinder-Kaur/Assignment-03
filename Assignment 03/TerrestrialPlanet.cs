@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+/*Name=Sukhjinder Kaur
+Student number= 301087895
+Date last Modified = 13 / 07 / 2020
+Program description=TerrestrialPlanet is the subclass of planet */
 
 namespace Assignment_03
 {

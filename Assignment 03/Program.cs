@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+/*Name=Sukhjinder Kaur
+Student number= 301087895
+Date last Modified = 13 / 07 / 2020
+Program description=This is a “Driver” class used to create 
+an object instance of the GiantPlanet and TerrestrialPlanet classes*/
 namespace Assignment_03
 {
     public class Program

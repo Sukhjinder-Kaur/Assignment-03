@@ -2,11 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+/*Name=Sukhjinder Kaur 
+ *Student number= 301087895
+ *Date last Modified= 13/07/2020
+ *Program description=This is an abstract class-Planet
+ */
 namespace Assignment_03
-{
+{/// <summary>
+/// This is an abstract class
+/// </summary>
     public abstract class Planet
     {
+        // Fields
+
         private double _diameter;
         private double _mass;
         private int _moonCount;
@@ -15,6 +23,7 @@ namespace Assignment_03
         private int _ringCount;
         private double _rotationPeriod;
 
+        ///Public properties
         public double Diameter
         {
             get
@@ -25,7 +34,7 @@ namespace Assignment_03
 
         public double Mass
         {
-            get 
+            get
             {
                 return _mass;
             }
@@ -81,13 +90,22 @@ namespace Assignment_03
             {
                 _rotationPeriod = value;
             }
-        }
+        }/// <summary>
+         /// This is the constructor of Planet abstract class and it takes 3 parameters
+         /// </summary>
+         /// <param name="name"></param>
+         /// <param name="diameter"></param>
+         /// <param name="mass"></param>
         public Planet(string name, double diameter, double mass)
         {
             _name = name;
             _diameter = diameter;
             _mass = mass;
         }
+        /// <summary>
+        /// String method return name ,diameter and mass
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"name= {Name},diameter= {Diameter} Km,Mass={Mass}kg";
