@@ -108,7 +108,9 @@ namespace Assignment_03
         /// <returns></returns>
         public override string ToString()
         {
-            return $"name= {Name},diameter= {Diameter} Km,Mass={Mass}kg";
+            return $"Planet name is = {Name}\n" +
+                   $"{Name} has a diameter of = {Diameter} Km \n" +
+                   $"Mass of {Name} is = {Mass} Kg ";
         }
     }
 }
