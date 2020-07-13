@@ -43,32 +43,23 @@ namespace Assignment_03
         //Public methods
         public bool HasMoons()
         {
-            if (MoonCount > 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return Convert.ToBoolean((MoonCount > 0) ? "True" : "False");
         }
         public bool HasRings()
         {
-            if (RingCount > 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return Convert.ToBoolean((RingCount > 0) ? "True" : "False");
         }
         /// <summary>
         /// String method return the output of Giant Planet to the console
         /// </summary>
         public override string ToString()
         {
-            return $"name= {Name},diameter= {Diameter} Km,Mass={Mass}kg,Type={Type}";
+            return $"Giant Planet name is = {Name}\n" +
+                   $"{Name} has a diameter of = {Diameter} Km \n" +
+                   $"Mass of {Name} is = {Mass} Kg \n" +
+                   $"And {Name} is an {Type} giant \n" +
+                   $"Does {Name} have any moons True/False ? {HasMoons()} \n" +
+                   $"Does {Name} have any rings True/False ? {HasRings()}";
         }
     }
 }

@@ -36,34 +36,23 @@ namespace Assignment_03
         //Public methods
         public bool HasMoons()
         {
-            if(MoonCount > 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return Convert.ToBoolean((MoonCount > 0) ? "True" : "False");
         }
 
         public bool Habitable()
         {
-            if (Oxygen == true)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return Convert.ToBoolean((Oxygen == true) ? "True" : "False");
         }
-
         /// <summary>
         /// String method return the output of Terrestrial  Planet to the console
         /// </summary>
         public override string ToString()
         {
-            return $"name= {Name},diameter= {Diameter} Km,Mass={Mass}kg,Habitable={Habitable()}";
+            return $"Terrestrial Planet name is = {Name}\n" +
+                   $"{Name} has a diameter of = {Diameter} Km \n" +
+                   $"Mass of {Name} is = {Mass} Kg \n" +
+                   $"Does {Name} have any moons True/False ? {HasMoons()} \n" +
+                   $"Is terrestrial planet {Name} habitable True/False ? {Habitable()}";
         }
     }
 }
